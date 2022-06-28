@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import { SearchIcon } from '@heroicons/react/outline'
+import { SearchIcon, ShoppingCartIcon } from '@heroicons/react/outline'
 
 const Header = () => {
   return (
@@ -23,6 +23,27 @@ const Header = () => {
           <input className='p-2 h-full flex-grow flex-shrink 
             rounded-l-md focus:outline-none px-4' type="text" />
           <SearchIcon className='h-12 p-4' />
+        </div>
+
+        {/* Right */}
+        <div className='flex items-center text-xs space-x-6 mx-6 
+        text-white whitespace-nowrap'>
+          <div className='link'>
+            <p>Hello Tom</p>
+            <p className='font-extrabold md:text-sm'>Account & List</p>
+          </div>
+          <div className='link'>
+            <p>Returns</p>
+            <p className='font-extrabold md:text-sm'>& Orders</p>
+          </div>
+          <div className='relative link flex items-center'>
+
+            <span className='absolute top-0 right-0 md:right-10 h-4 w-4 
+            bg-yellow-400 text-center rounded-full text-black font-bold'>0</span>
+
+            <ShoppingCartIcon className='h-10' />
+            <p className='font-extrabold md:text-sm hidden md:!inline mt-2'>Basket</p>
+          </div>
         </div>
       </div>
 
