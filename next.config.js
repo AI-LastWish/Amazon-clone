@@ -2,6 +2,6 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ["links.papareact.com", "faketoreapi.com"]
+    domains: ["links.papareact.com", "fakestoreapi.com"]
   }
 }
